@@ -1,0 +1,10 @@
+{
+    "/build/background.js": "/build/background.js",
+    "/build/popup/index.js": "/build/popup/index.js",
+    "/build/popup/css/styles.css": "/build/popup/css/styles.css",
+    "/dist/chrome/background.js": "/dist/chrome/background.js",
+    "/dist/chrome/manifest.json": "/dist/chrome/manifest.json",
+    "/dist/chrome/popup/popup.html": "/dist/chrome/popup/popup.html",
+    "/dist/chrome/popup/css/styles.css": "/dist/chrome/popup/css/styles.css",
+    "/dist/chrome/popup/js/index.js": "/dist/chrome/popup/js/index.js"
+}

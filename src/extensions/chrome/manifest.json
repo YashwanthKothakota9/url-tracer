@@ -1,15 +1,12 @@
 {
   "name": "URL_TRACER",
-  "description": "{This is an extension to trace user stats for each url visited}",
-  "version": "{1.0.0}",
+  "description": "This is an extension to trace user stats for each url visited",
+  "version": "1.0.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
-  "icons": {
-    "16": "/images/icons/icon-16x16.png",
-    "32": "/images/icons/icon-32x32.png",
-    "48": "/images/icons/icon-48x48.png",
-    "128": "/images/icons/icon-128x128.png"
+  "action": {
+    "default_popup": "popup/popup.html"
   }
 }

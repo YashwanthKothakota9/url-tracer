@@ -21,3 +21,12 @@ Content scripts are what make browser extensions powerful. Content scripts are s
 ### Background Scripts
 
 Think of background scripts as the “API” to your extension.Use background scripts for registering alarms (timed processes), managing state, facilitating communication, injecting content scripts through code (good for dynamically injected content scripts), adding context menus (right click) or pretty much any “always on” type of function or communication.Background scripts are always headless so you won’t use any of the frontend tools you might use elsewhere.
+
+```
+"icons": {
+    "16": "/images/icons/icon-16x16.png",
+    "32": "/images/icons/icon-32x32.png",
+    "48": "/images/icons/icon-48x48.png",
+    "128": "/images/icons/icon-128x128.png"
+  },
+```
