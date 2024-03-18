@@ -28,3 +28,20 @@ mix
   .js('src/popup/index.jsx', 'build/popup/index.js')
   .react()
   .copy('build/popup/index.js', 'dist/chrome/popup/js/index.js');
+
+/**
+ * Copy Extension Page
+ */
+// index.html
+mix.copy('src/pages/index.html', 'dist/chrome/pages/index.html');
+
+// styles.css
+mix
+  .postCss('src/pages/resources/css/styles.css', 'build/pages/css/styles.css')
+  .copy('build/pages/css/styles.css', 'dist/chrome/pages/css/styles.css');
+
+// index.js
+mix
+  .js('src/pages/index.jsx', 'build/pages/index.js')
+  .react()
+  .copy('build/pages/index.js', 'dist/chrome/pages/js/index.js');
