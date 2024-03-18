@@ -22,7 +22,7 @@ Content scripts are what make browser extensions powerful. Content scripts are s
 
 Think of background scripts as the “API” to your extension.Use background scripts for registering alarms (timed processes), managing state, facilitating communication, injecting content scripts through code (good for dynamically injected content scripts), adding context menus (right click) or pretty much any “always on” type of function or communication.Background scripts are always headless so you won’t use any of the frontend tools you might use elsewhere.
 
-```
+```js
 "icons": {
     "16": "/images/icons/icon-16x16.png",
     "32": "/images/icons/icon-32x32.png",
@@ -30,3 +30,26 @@ Think of background scripts as the “API” to your extension.Use background sc
     "128": "/images/icons/icon-128x128.png"
   },
 ```
+
+When passing a message from any part of your extension to any other part of your extension, you pass an object.
+
+This target key is the part of the extension should listen for this message. I also pass an action key which is what method should be run. Then any data I pass along with the message is passed with the data key.
+
+Example:
+
+```js
+await browser.runtime.sendMessage({
+  target: 'BACKGROUND',
+  action: 'ANNOUNCE_USER',
+  data: {
+    name: 'Dan',
+  },
+});
+```
+
+Here’s the base level targets I use:
+
+- BACKGROUND - Any message sent to the background service worker script.
+- POPUP - Any message sent to the popup script.
+- CONTENT - Any message sent to the content script.
+- PAGE - Any message sent to the extension’s page
