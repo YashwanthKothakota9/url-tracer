@@ -53,3 +53,12 @@ Here’s the base level targets I use:
 - POPUP - Any message sent to the popup script.
 - CONTENT - Any message sent to the content script.
 - PAGE - Any message sent to the extension’s page
+
+```js
+"content_scripts": [
+{
+"matches": ["<all_urls>"],
+"js": ["content/index.js"]
+}
+],
+```
