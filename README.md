@@ -1,4 +1,79 @@
-## 4 places where extension functionality is placed
+<div align='center'>
+    <h1 align='center'>Url Tracer</h1>
+    <h3>The chrome extension which gives your url usage stats on web.</h3>
+</div>
+
+<div align='center'>
+    <a href="https://twitter.com/Yashcsp22"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/Yashcsp22"></a>
+</div>
+
+<br/>
+
+Url Tracer is a chrome extension which traces and lists how much time user spend their browsing time on a particular tab.
+
+## Features
+
+- **Usage Stats:** This provides your personal usage stats which helps to find out on which you are spending more time while web surfing. This helps in your productivity.
+- **Self-hosted, open-source:** Host it yourself and hack on it
+
+## Demo
+
+![UrlTracer Welcome](.github/images/url-tracer-1.png)
+
+## Tech Stack
+
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Tailwind](https://tailwindcss.com/) – CSS
+- [Laravel Mix](https://laravel-mix.com/) - Bundler
+
+## Getting Started
+
+### Prerequisites
+
+Here's what you need to be able to run Url Tracer:
+
+### 1. Clone the repository
+
+```shell
+git clone https://github.com/YashwanthKothakota9/url-tracer.git
+cd url-tracer
+```
+
+You will find `src` folder. I have used `yarn` package manager.
+
+### 2. Install npm dependencies
+
+```shell
+npm install -g yarn
+yarn install
+```
+
+### 3. Pack the extension
+
+```shell
+npx mix
+```
+
+It will create two folders `build` and `dist` inside `url-tracer` folder.
+
+### 4. Use Extension
+
+- Open `Chrome` and navigate to `chrome://extensions`.
+  ![Step-1](.github/images/url-tracer-2.png)
+- Turn on `developer mode`.
+  ![Step-1](.github/images/url-tracer-3.png)
+- Click on `load unpacked` which is on left corner.
+- Select `url-tracer/dist` folder
+  ![Step-1](.github/images/url-tracer-4.png)
+- Now surf the internet and at the end of your work click on the `extension` icon you will see your usage stats.
+
+## Contributing
+
+Url-tracer is an open-source extension which is aimed to help people to increase their productivity while surfing the web by knowing which task is costing their most amount of time.
+
+If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
+
+### Additional information about developing extensions
 
 ### Popups
 
@@ -62,3 +137,5 @@ Here’s the base level targets I use:
 }
 ],
 ```
+
+In this chrome extension only `POPUP` and `BackgroundScript` is used.
